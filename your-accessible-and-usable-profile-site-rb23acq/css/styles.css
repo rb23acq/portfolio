@@ -1,0 +1,104 @@
+html, body {
+    height: 100%; 
+    margin: 0;    
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr auto; 
+    min-height: 100vh; 
+}
+
+main {
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+footer {
+    padding-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(163, 209, 186);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: auto;
+    max-height: 500px;
+}
+
+.introduction_pre{
+    display: flex;
+    justify-content: center;
+}
+
+.introduction_img{
+        display: flex;
+        justify-content: center;
+    
+}
+.heading_primary{
+    background-color: rgb(163, 209, 186);
+    padding: 20px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.navigation{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme{
+    border-right: 1px solid black;
+    padding: 0px 10px;
+}
+.portfolio{
+    border-right: 1px solid black;
+    padding: 0px 10px;
+}
+.events{
+    padding: 0px 10px;
+    
+}
+.main_portfolio{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.grid_one_portfolio{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.grid_two_portfolio{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.grid_three_portfolio{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.grid_four_portfolio{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.events_one, .events_two, .events_three{
+    margin-bottom: 50px;
+}
+.form_about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

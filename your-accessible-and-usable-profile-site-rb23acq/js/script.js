@@ -8,7 +8,7 @@ function myFunction() {
     }
 }
 
-document.getElementById('whenAndWhereBtn').addEventListener('click', function(event) {
+document.getElementById('btnAbout').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default anchor click behavior
-    document.getElementById('whenandwhere').scrollIntoView({ behavior: 'smooth' }); // Scroll to the section smoothly
+    document.getElementById('btnAbout').scrollIntoView({ behavior: 'smooth' }); // Scroll to the section smoothly
 });

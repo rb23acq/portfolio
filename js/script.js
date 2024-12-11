@@ -1,8 +1,10 @@
 window.onload = function() {
-    if (window.location.pathname === '/' || window.location.pathname === 'index.html') {
-        alert("Hi, Welcome to my website!");
+    const currentPath = window.location.pathname.replace(/^\/+/, ''); // Normalize path (remove leading slashes if any)
+    if (currentPath === '' || currentPath === 'index.html') {
+        alert("Hello, Welcome to my website!");
     }
 };
+
 
 //selecting all of the images from the clickable class
 const images = document.querySelectorAll('.clickable-image');

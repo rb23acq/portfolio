@@ -1,0 +1,164 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-body {
+    background-image: url(/images/backgroundftw1.jpg);
+}
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #5daa5d; /* Background color */
+  
+}
+
+.section {
+  padding: 60px 0;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    margin-left: 40px;
+}
+.navigation{
+    overflow: hidden;
+    background-color: #5daa5d;
+    opacity: 90%;
+}
+.navigation-list li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 5px;
+  float: inline-end;
+  gap: 10px;
+}
+.navigation-list:last-child{
+    padding-right: 20px;
+}
+.navigation-button {
+  background-color: #004b23; /* Background color */
+  color: white;
+  border: none;
+  border-radius: 5px; /*create a rounder like shape for the corners*/
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer; /*create the pointer effect when the coursor is hovered over the button*/
+  transition: background-colour 0.3s ease; /*how fast will the transition be from one color to another when we hover*/
+}
+.navigation-button:hover {
+  background-color: #5daa5d; /* Background color */
+}
+.hero{
+    padding: 80px;
+}
+.heading-primary {
+  text-align: center;
+  overflow: hidden;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading-primary-sub{
+    color: #00a5cf;
+    
+}
+.circle {
+  width: 300px; /* Diameter of the circle */
+  height: 300px;
+  clip-path: circle(50%); /* Creates a circular shape */
+  margin: 20px auto;
+}
+.circle img {
+  object-fit: cover; /* puts the picture as a cover so it would fit inside the circle*/
+  display: block; /*make it so it would take up full width*/
+  height: 100%;
+  width: 100%;
+}
+.aboutme{
+    text-align: start; /*aligns the text to the left*/
+    overflow: hidden; /*the content insider the container is hidden if its larger than the container*/
+    padding: 80px;
+    margin: 80px;
+    font-size: large;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 0;
+    box-sizing: border-box;
+}
+.aboutme-text-intro{
+    color: #5daa5d;;
+}
+.introduction-pre{
+    color: #5daa5d;
+}
+.whatido-list{
+    
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*using fractions for equal collumns*/
+    gap: 40px;
+}
+.floatbackground-effect{
+    height: 200px; /* Set height for the visible background section */
+    background-image: url('/images/background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-position: center; /* Centers the image */
+    background-attachment: scroll;
+}
+/*PORTFOLIO CSS */
+
+.image-container {
+    text-align: center; /* Centers the image */
+    margin-top: 20px;
+}
+
+.clickable-image {
+    width: 400px; /* Initial small size */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+.enlarged {
+    transform: scale(2); /* Doubles the size of the image */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+h3{
+    text-align: center;
+    
+}
+.technical-list{
+    list-style: none;
+}
+.project-list{
+    list-style: none;
+}
+.special-h3{
+    text-align: start;
+}

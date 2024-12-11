@@ -1,5 +1,5 @@
 window.onload = function() {
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    if (window.location.pathname === '' || window.location.pathname === 'index.html') {
         alert("Hi, Welcome to my website!");
     }
 };

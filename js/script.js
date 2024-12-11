@@ -1,8 +1,8 @@
 window.onload = function() {
-        alert("Hello, Welcome to my website!");
-    
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        alert("Hi, Welcome to my website!");
+    }
 };
-
 
 //selecting all of the images from the clickable class
 const images = document.querySelectorAll('.clickable-image');

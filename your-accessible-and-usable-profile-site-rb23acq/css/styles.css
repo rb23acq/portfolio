@@ -1,167 +1,164 @@
-/* Typography */
+html,
 body {
-    font-family: 'Lato', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    color: #222;
-    margin: 0 0 15px;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.75em;
-}
-
-p {
-    margin: 0 0 15px;
-}
-
-/* Layout */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-.header {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
-
-.header__logo {
-    max-width: 150px;
-    margin-bottom: 20px;
-}
-
-.header__text-box {
-    margin-top: 20px;
-}
-
-.navbar {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    background-color: #333;
-    text-align: center;
-}
-
-.navbar a {
-    color: white;
-    padding: 14px;
+a{
     text-decoration: none;
-    display: block;
+    color: inherit;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+.main-body {
+    background-image: url(/images/backgroundftw1.jpg);
+}
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #5daa5d; /* Background color */
+  
 }
 
 .section {
-    padding: 60px 0;
+  padding: 60px 0;
 }
-
-.section--light {
-    background-color: #f8f8f8;
+.logo{
+    float: left;
 }
-
-.section--dark {
-    background-color: #333;
-    color: white;
+.logo img{
+    width: 100px;
+    height: auto;
+    margin-left: 40px;
 }
-
-.section__title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.row {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-@media (min-width: 768px) {
-    .row {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.navigation{
     overflow: hidden;
-    transition: transform 0.3s;
+    background-color: #5daa5d;
+    opacity: 90%;
 }
-
-.card:hover {
-    transform: scale(1.05);
+.navigation-list li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 5px;
+  float: inline-end;
+  gap: 10px;
 }
-
-.card__picture {
-    background-size: cover;
-    height: 200px;
-    position: relative;
+.navigation-list:last-child{
+    padding-right: 20px;
 }
-
-.card__details {
-    padding: 20px;
+.navigation-button {
+  background-color: #004b23; /* Background color */
+  color: white;
+  border: none;
+  border-radius: 5px; /*create a rounder like shape for the corners*/
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer; /*create the pointer effect when the coursor is hovered over the button*/
+  transition: background-colour 0.3s ease; /*how fast will the transition be from one color to another when we hover*/
 }
-
-.card__details ul {
-    list-style: none;
+.navigation-button:hover {
+  background-color: #5daa5d; /* Background color */
+}
+.hero{
+    padding: 80px;
+}
+.heading-primary {
+  text-align: center;
+  overflow: hidden;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading-primary-sub{
+    color: #00a5cf;
+    
+}
+.circle {
+  width: 300px; /* Diameter of the circle */
+  height: 300px;
+  clip-path: circle(50%); /* Creates a circular shape */
+  margin: 20px auto;
+}
+.circle img {
+  object-fit: cover; /* puts the picture as a cover so it would fit inside the circle*/
+  display: block; /*make it so it would take up full width*/
+  height: 100%;
+  width: 100%;
+}
+.aboutme{
+    text-align: start; /*aligns the text to the left*/
+    overflow: hidden; /*the content insider the container is hidden if its larger than the container*/
+    padding: 80px;
+    margin: 80px;
+    font-size: large;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
     padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
-
-.card__details ul li {
-    padding: 5px 0;
-    border-bottom: 1px solid #eee;
+.aboutme-text-intro{
+    color: #5daa5d;;
 }
-
-.story {
+.introduction-pre{
+    color: #5daa5d;
+}
+.whatido-list{
+    
+    list-style: none;
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 20px;
-    align-items: center;
+    grid-template-columns: 1fr 1fr; /*using fractions for equal collumns*/
+    gap: 40px;
+}
+.floatbackground-effect{
+    height: 200px; /* Set height for the visible background section */
+    background-image: url('/images/background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-position: center; /* Centers the image */
+    background-attachment: scroll;
+}
+/*PORTFOLIO CSS */
+
+.image-container {
+    text-align: center; /* Centers the image */
+    margin-top: 20px;
 }
 
-.story__shape {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
+.clickable-image {
+    width: 400px; /* Initial small size */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
 }
-
-.story__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.enlarged {
+    transform: scale(2); /* Doubles the size of the image */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
 }
-
-.story__text {
-    padding: 10px;
-}
-
-.footer {
+h3{
     text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    margin-top: 40px;
+    
+}
+.technical-list{
+    list-style: none;
+}
+.project-list{
+    list-style: none;
+}
+.special-h3{
+    text-align: start;
 }

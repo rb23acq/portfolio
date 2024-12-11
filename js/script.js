@@ -1,8 +1,6 @@
 window.onload = function() {
-    const currentPath = window.location.pathname.replace(/^\/+/, ''); // Normalize path (remove leading slashes if any)
-    if (currentPath === '' || currentPath === 'index.html') {
         alert("Hello, Welcome to my website!");
-    }
+    
 };
 
 
